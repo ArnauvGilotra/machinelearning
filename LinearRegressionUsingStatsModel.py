@@ -2,14 +2,11 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import pandas as pd
 
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn import datasets
 
 boston = datasets.load_boston()
 X_train = boston['data']
 y_train = boston['target']
-￼
 
 X_train_with_constant = sm.add_constant(X_train)
 mod1 = sm.OLS(y_train, X_train_with_constant)
