@@ -18,5 +18,5 @@ binary_model.fit(X_cancer, y_cancer)
 
 
 y_hats = binary_model.predict(X_cancer)
-p_hats = binary_model.predict_proba(X_cancer)
+#p_hats = binary_model.predict_proba(X_cancer)
 print(f'Training accuracy: {binary_model.score(X_cancer, y_cancer)}')
