@@ -5,7 +5,7 @@ import seaborn as sns
 import pandas as pd
 ￼
 
-## Load tips data
+## Load  data
 tips = sns.load_dataset('tips')
 X = tips.drop(columns = 'tip')
 y = tips['tip']
