@@ -22,7 +22,6 @@ y_test = y.loc[test_idxs]
 
 from sklearn.tree import DecisionTreeRegressor
 
-## Get dummies
 X_train = pd.get_dummies(X_train, drop_first = True)
 X_test = pd.get_dummies(X_test, drop_first = True)
 
