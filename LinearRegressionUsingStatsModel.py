@@ -20,7 +20,7 @@ display(df.head())
 formula = 'target ~ ' + ' + '.join(boston['feature_names'])
 print('formula:', formula)
 
-
+# It gives better results
 mod2 = smf.ols(formula, data = df)
 sm_fit2 = mod2.fit()
 sm_predictions2 = sm_fit2.predict(df)
